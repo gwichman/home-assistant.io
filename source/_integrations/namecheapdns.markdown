@@ -30,6 +30,21 @@ namecheapdns:
   password: YOUR_PASSWORD
 ```
 
+```yaml
+# Example configuration.yaml entry for root domain and multiple sub domains
+namecheapdns:
+  domain: example.com
+  password: YOUR_PASSWORD
+namecheapdns:
+  host: subdomain1
+  domain: example.com
+  password: YOUR_PASSWORD
+namecheapdns:
+  host: subdomain2
+  domain: example.com
+  password: YOUR_PASSWORD
+```
+
 {% configuration %}
   host:
     description: The host part or "subdomain" part you want to update.
